@@ -33,7 +33,7 @@ SELECT COUNT(`phone`) AS 'Teacher whit phone' FROM `teachers`;
 SELECT COUNT(*) AS 'number of enrolment',YEAR(`enrolment_date`) AS `year` FROM `students` GROUP BY `year`;
 -- 2. Contare gli insegnanti che hanno l'ufficio nello stesso edificio
 
-
+SELECT COUNT(*) AS 'Number of teachers',`office_address` FROM `teachers` GROUP BY `office_address`;
 -- 3. Calcolare la media dei voti di ogni appello d'esame
 
 
